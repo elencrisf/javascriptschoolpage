@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <p>JSSchool</p>
+        <div class="nav">
+            <a id="active" href="#">Introduction</a>
+            <a href="#main">How can do</a>
+            <a href="#change-img">Change Image</a>
+            <a href="#script">Tag &lt;script&gt;</a>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <header>
+        <h1>JavaScript Introduction</h1>
+    </header>
+
+
+    <div class="introduction">
+        <p>JavaScript is the programming language of HTML and the Web.</br>
+            One common JavaScript HTML method is getElementById().</br>
+            This example uses the method to "find" an HTML element and changes the element content to "Hello, World":
+        </br></p>
+        
+    </div>
+
+    <div class="main" id="main">
+        <div class="sub-main">
+        <h2>How can do this?</h2>
+        
+        <textarea class="textarea" readonly="" rows="4" cols="120">
+<p id="demo">Changing a HTML content:</p>
+<p><button type="button" onclick='document.getElementById("demo").innerHTML = "Hello, World!"'>Click Me!</button></p>
+        </textarea>
+
+        <p>OUTPUT:</p>
+        </b>
+            <div class="show-code">
+            <p id="demo">Changing a HTML content:</p>
+            <p><button type="button" onclick='document.getElementById("demo").innerHTML = "Hello, World!"'>Click Me!</button></p>
+            </div>
+        </div>
+
+        <div class="sub-main" id="change-img">
+
+            <h2>JavaScript changing images</h2>
+
+            <p>JavaScript can change HTML attribute values for example, changing image that is showed.</p>
+            <p>In this example, JavaScript will change the value of the src (source) attribute of an image.</p>
+
+            <textarea class="textarea" readonly="" rows="4" cols="120">
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Click for turn on</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Click for turn off</button>    
+            </textarea>
+
+            <p>OUTPUT:</p>
+            </br>
+            <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Click for turn on</button>
+            <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Click for turn off</button>
+        
+        </div>
+
+        <div class="sub-main" id="script">
+
+            <h2 class="textarea-h2">Tag &lt;script&gt;  &lt;/script&gt;</h2>
+
+            <p>You can criate a tag &lt;script&gt on the bottom of HTML before &lt;/body&gt; for code JavaScript and it could be better when it is a function.</p>
+ 
+
+            <textarea class="textarea" readonly="" rows="17" cols="120">
+<html>
+<body>
+
+
+    
+<footer></footer>
+
+<p>JavaScript used on the bottom of the body</p>
+
+    <p id="demo"></p>
+
+    <script>
+    document.getElementById("demo").innerHTML = "JavaScript body";
+    </script>
+
+</body>
+</html>
+            </textarea>
+
+        <p>OUTPUT:</p>
+        </br>
+        <div class="show-code">
+            <p>JavaScript used on the bottom of the body</p>
+            <p id="demo1"></p>
+        </div>
+        </div>
+        
+    </div>
+
+<footer class="footer">
+        
+    <p>by Elen Cristina Ferreira - 28 Jan 2020</p>
+    <p>Reference: Websites: 3CW School / DevMedia</p>
+
+</footer>
+        
+   
+</body>
+
+    
+<script>
+    document.getElementById("demo1").innerHTML = "JavaScript body";
+</script>
+
+</html>
